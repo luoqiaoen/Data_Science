@@ -359,7 +359,7 @@ df.iplot(kind='scatter',x='A',y='B',mode='markers',size=10)
 ```
 
 <div>
+<script data-plotly="luoqiaoen:3" sharekey-plotly="EUmdCtp1i0Y0PIlwlnLxek" src="https://plot.ly/embed.js" async></script>
     <a href="https://plot.ly/~luoqiaoen/3/?share_key=EUmdCtp1i0Y0PIlwlnLxek" target="_blank" title="Plot 3" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/3.png?share_key=EUmdCtp1i0Y0PIlwlnLxek" alt="Plot 3" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="luoqiaoen:3" sharekey-plotly="EUmdCtp1i0Y0PIlwlnLxek" src="https://plot.ly/embed.js" async></script>
 </div>
 

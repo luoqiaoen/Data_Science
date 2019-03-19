@@ -611,3 +611,14 @@ import plotly
 import cufflinks as cf
 cf.go_offline()
 ```
+
+** Create a line plot showing Close price for each bank for the entire index of time. (Hint: Try using a for loop, or use .xs to get a cross section of the data.)**
+
+```
+bank_stocks.xs(key='Close',axis=1,level='Stock Info').iplot()
+```
+
+<div>
+    <a href="https://plot.ly/~luoqiaoen/13/?share_key=hU0NN1TYeMSeqXnkltnQkH" target="_blank" title="Plot 13" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/13.png?share_key=hU0NN1TYeMSeqXnkltnQkH" alt="Plot 13" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+</div>
+

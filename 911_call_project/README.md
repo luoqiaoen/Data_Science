@@ -992,7 +992,3 @@ sns.clustermap(dayMonth,cmap='viridis')
 
 
 ![png](911_Calls_Data_Project_files/911_Calls_Data_Project_64_1.png)
-
-
-**Continue exploring the Data however you see fit!**
-# Great Job!

@@ -346,7 +346,7 @@ sns.heatmap(pvflights,cmap='magma',linecolor='white',linewidths=1)
 
 
 ## Plotly and Cufflinks
-Plotly is a library that allows you to create interactive plots that you can use in dashboards or websites (you can save them as html files or static images).
+Plotly is a library that allows you to create **interactive plots** that you can use in dashboards or websites (you can save them as html files or static images).
 
 
 ```python
@@ -358,5 +358,32 @@ df = pd.DataFrame(np.random.randn(100,4),columns='A B C D'.split())
 df.iplot(kind='scatter',x='A',y='B',mode='markers',size=10)
 ```
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~luoqiaoen/3.embed"></iframe>
+<div>
+    <a href="https://plot.ly/~luoqiaoen/3/?share_key=EUmdCtp1i0Y0PIlwlnLxek" target="_blank" title="Plot 3" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/3.png?share_key=EUmdCtp1i0Y0PIlwlnLxek" alt="Plot 3" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a></div>
 
+```
+df.count().iplot(kind='bar')
+```
+<div>
+    <a href="https://plot.ly/~luoqiaoen/5/?share_key=x3xfZ8ipQZIZw6eCrmp3Nl" target="_blank" title="Plot 5" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/5.png?share_key=x3xfZ8ipQZIZw6eCrmp3Nl" alt="Plot 5" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a></div>
+
+```
+df.iplot(kind='box')
+```
+<div>
+    <a href="https://plot.ly/~luoqiaoen/7/?share_key=T5IzFFRcekYdbc9uffnBli" target="_blank" title="Plot 7" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/7.png?share_key=T5IzFFRcekYdbc9uffnBli" alt="Plot 7" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+</div>
+```
+df3 = pd.DataFrame({'x':[1,2,3,4,5],'y':[10,20,30,20,10],'z':[5,4,3,2,1]})
+df3.iplot(kind='surface',colorscale='rdylbu')
+```
+<div>
+    <a href="https://plot.ly/~luoqiaoen/9/?share_key=u2WCNVZdYz6unbUGgNJhLr" target="_blank" title="Plot 9" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/9.png?share_key=u2WCNVZdYz6unbUGgNJhLr" alt="Plot 9" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+</div>
+
+```
+df[['A','B']].iplot(kind='spread')
+```
+<div>
+    <a href="https://plot.ly/~luoqiaoen/11/?share_key=OW46QMKUb04VC6i1o8HpsP" target="_blank" title="Plot 11" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/11.png?share_key=OW46QMKUb04VC6i1o8HpsP" alt="Plot 11" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+</div>

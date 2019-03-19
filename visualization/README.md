@@ -357,3 +357,9 @@ df = pd.DataFrame(np.random.randn(100,4),columns='A B C D'.split())
 # examples:
 df.iplot(kind='scatter',x='A',y='B',mode='markers',size=10)
 ```
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~luoqiaoen/3.embed"></iframe>
+</figure>
+<!-- blank line -->

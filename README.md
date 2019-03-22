@@ -9,11 +9,11 @@ Some notes I put together while going through courses.
 * seaborn
 * plotly
 * scikit-learn:
-1. linear regression
-2. logistic regression
-3. KNN
-4. Decision Tree, Random Forest
-5. SVM
+  1. linear regression
+  2. logistic regression
+  3. KNN
+  4. Decision Tree, Random Forest
+  5. SVM
 
 ## SQL Exercises
 

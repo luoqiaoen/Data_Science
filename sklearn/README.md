@@ -1,6 +1,9 @@
 # SciKit-Learn Package
 1. Linear Regression
 2. Logistic Regression
+3. KNN
+4. Decision Tree & Random Forest
+5. SVM
 
 ## Mind Map
 <p align="center">

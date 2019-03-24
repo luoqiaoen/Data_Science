@@ -24,7 +24,7 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
    1. [911 Call](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/911_call_project)
    2. [Stock Prices](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/finance_project)
 
-# More Advanced Machine Learning Stuff:
+## More Advanced Machine Learning Stuff:
 1. [Recommender: memory-based and model-based collaborative filtering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/recommender)
 2. [Natural Language Processing](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/nlp)
 3. [Yelp Project (NLP)](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/yelp_project)

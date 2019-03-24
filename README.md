@@ -1,6 +1,7 @@
 
-# Notes for Data Science 
+# Notes for Data Science
 Some notes I put together while going through courses.
+I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter notebooks into READMEs.
 
 ## Python Packages used:
 * numpy

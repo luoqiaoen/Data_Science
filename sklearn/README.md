@@ -5,7 +5,7 @@
 4. Decision Tree & Random Forest
 5. SVM
 
-## Mind Map
+# Mind Map
 <p align="center">
   <img width="1000" height="600" src="https://github.com/luoqiaoen/python_Data_Science/blob/master/sklearn/ml_map.png">
 </p>

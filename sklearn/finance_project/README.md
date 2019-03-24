@@ -1,22 +1,15 @@
-# Finance Data Project
 
-In this data project we will focus on exploratory data analysis of stock prices. Keep in mind, this project is just meant to practice your visualization and pandas skills, it is not meant to be a robust financial analysis or be taken as financial advice.
-____
-** NOTE: This project is extremely challenging because it will introduce a lot of new concepts and have you looking things up on your own (we'll point you in the right direction) to try to solve the tasks issued. Feel free to just go through the solutions lecture notebook and video as a "walkthrough" project if you don't want to have to look things up yourself. You'll still learn a lot that way! **
-____
-We'll focus on bank stocks and see how they progressed throughout the [financial crisis](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%9308) all the way to early 2016.
+# Finance Data Project 
+
+We observe bank stocks and see how they progressed throughout the [financial crisis](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%9308).
 
 ## Get the Data
 
-In this section we will learn how to use pandas to directly read data from Google finance using pandas!
-
-First we need to start with the proper imports, which we've already laid out for you here.
-
-*Note: [You'll need to install pandas-datareader for this to work!](https://github.com/pydata/pandas-datareader) Pandas datareader allows you to [read stock information directly from the internet](http://pandas.pydata.org/pandas-docs/stable/remote_data.html) Use these links for install guidance (**pip install pandas-datareader**), or just follow along with the video lecture.*
-
+Need to install pandas-datareader:
+```
+conda install -c anaconda pandas-datareader 
+```
 ### The Imports
-
-Already filled out for you.
 
 
 ```python
@@ -43,11 +36,11 @@ We need to get data using pandas datareader. We will get stock information for t
 2. Figure out how to use datareader to grab info on the stock.
 
 ** Use [this documentation page](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html) for hints and instructions (it should just be a matter of replacing certain values. Use google finance as a source, for example:**
-
+    
     # Bank of America
     BAC = data.DataReader("BAC", 'google', start, end)
 
-### WARNING: MAKE SURE TO CHECK THE LINK ABOVE FOR THE LATEST WORKING API. "google" MAY NOT ALWAYS WORK.
+### WARNING: MAKE SURE TO CHECK THE LINK ABOVE FOR THE LATEST WORKING API. "google" MAY NOT ALWAYS WORK. 
 ------------
 ### We also provide pickle file in the article lecture right before the video lectures.
 
@@ -464,12 +457,12 @@ sns.pairplot(returns[1:])
 
 
 
-    <seaborn.axisgrid.PairGrid at 0x114e4a2d0>
+    <seaborn.axisgrid.PairGrid at 0x116934240>
 
 
 
 
-![png](Finance%20Project_files/Finance%20Project_23_1.png)
+![png](Finance%20Project_files/Finance%20Project_22_1.png)
 
 
 * See solution for details about Citigroup behavior....
@@ -478,7 +471,7 @@ sns.pairplot(returns[1:])
 
 
 ```python
-# Worst Drop
+# Worst Drop 
 returns.idxmin()
 ```
 
@@ -563,15 +556,19 @@ returns.loc['2015-01-01':'2015-12-31'].std()
 sns.distplot(returns.loc['2015-01-01':'2015-12-31']['MS Return'],color='blue',bins=100)
 ```
 
+    /Users/luoqiaoen/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py:1713: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+      return np.add.reduce(sorted[indexer] * weights, axis=axis) / sumval
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x114c9bdd0>
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a198d7be0>
 
 
 
 
-![png](Finance%20Project_files/Finance%20Project_34_1.png)
+![png](Finance%20Project_files/Finance%20Project_33_2.png)
 
 
 ** Create a distplot using seaborn of the 2008 returns for CitiGroup **
@@ -584,12 +581,12 @@ sns.distplot(returns.loc['2008-01-01':'2008-12-31']['C Return'],color='red',bins
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x116c2e650>
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a19e99198>
 
 
 
 
-![png](Finance%20Project_files/Finance%20Project_36_1.png)
+![png](Finance%20Project_files/Finance%20Project_35_1.png)
 
 
 ____
@@ -612,13 +609,115 @@ import cufflinks as cf
 cf.go_offline()
 ```
 
-** Create a line plot showing Close price for each bank for the entire index of time. (Hint: Try using a for loop, or use .xs to get a cross section of the data.)**
 
-```
-bank_stocks.xs(key='Close',axis=1,level='Stock Info').iplot()
+    ---------------------------------------------------------------------------
+
+    ModuleNotFoundError                       Traceback (most recent call last)
+
+    <ipython-input-29-15137553aeca> in <module>
+          5 
+          6 # Optional Plotly Method Imports
+    ----> 7 import plotly
+          8 import cufflinks as cf
+          9 cf.go_offline()
+
+
+    ModuleNotFoundError: No module named 'plotly'
+
+
+** Create a line plot showing Close price for each bank for the entire index of time. (Hint: Try using a for loop, or use [.xs](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.xs.html) to get a cross section of the data.)**
+
+
+```python
+for tick in tickers:
+    bank_stocks[tick]['Close'].plot(figsize=(12,4),label=tick)
+plt.legend()
 ```
 
-<div>
-    <a href="https://plot.ly/~luoqiaoen/13/?share_key=hU0NN1TYeMSeqXnkltnQkH" target="_blank" title="Plot 13" style="display: block; text-align: center;"><img src="https://plot.ly/~luoqiaoen/13.png?share_key=hU0NN1TYeMSeqXnkltnQkH" alt="Plot 13" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-</div>
+
+
+
+    <matplotlib.legend.Legend at 0x1a1a5c1f60>
+
+
+
+
+![png](Finance%20Project_files/Finance%20Project_39_1.png)
+
+
+
+```python
+bank_stocks.xs(key='Close',axis=1,level='Stock Info').plot()
+```
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a1a685cc0>
+
+
+
+
+![png](Finance%20Project_files/Finance%20Project_40_1.png)
+
+
+## Moving Averages
+
+Let's analyze the moving averages for these stocks in the year 2008. 
+
+** Plot the rolling 30 day average against the Close Price for Bank Of America's stock for the year 2008**
+
+
+```python
+plt.figure(figsize=(12,6))
+BAC['Close'].loc['2008-01-01':'2009-01-01'].rolling(window=30).mean().plot(label='30 Day Avg')
+BAC['Close'].loc['2008-01-01':'2009-01-01'].plot(label='BAC CLOSE')
+plt.legend()
+```
+
+
+
+
+    <matplotlib.legend.Legend at 0x1a1a734710>
+
+
+
+
+![png](Finance%20Project_files/Finance%20Project_42_1.png)
+
+
+** Create a heatmap of the correlation between the stocks Close Price.**
+
+
+```python
+sns.heatmap(bank_stocks.xs(key='Close',axis=1,level='Stock Info').corr(),annot=True)
+```
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x1a1a725c18>
+
+
+
+
+![png](Finance%20Project_files/Finance%20Project_44_1.png)
+
+
+** Optional: Use seaborn's clustermap to cluster the correlations together:**
+
+
+```python
+sns.clustermap(bank_stocks.xs(key='Close',axis=1,level='Stock Info').corr(),annot=True)
+```
+
+
+
+
+    <seaborn.matrix.ClusterGrid at 0x1a1a908c88>
+
+
+
+
+![png](Finance%20Project_files/Finance%20Project_46_1.png)
 

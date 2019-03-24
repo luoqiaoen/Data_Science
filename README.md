@@ -1,20 +1,12 @@
 
 # Notes for Data Science
-Some notes I put together while going through courses.
+Some notes I put together while going through data science/python/spark courses.
 I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter notebooks into READMEs.
-
-## Python Packages used:
-* numpy
-* pandas
-* matplotlib
-* seaborn
-* plotly
-* scikit-learn
 
 ## SQL:
 * [SQL Exercise](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/SQL_exercise)
 
-## Topics visited:
+## Scikit-Learn:
 1. [Visualization of data.](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/visualization)
 2. [Linear regression.](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/linear_regression)
    * [Ecommerce Cutomer](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/customer_project)
@@ -27,6 +19,10 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
    * [Lending Club](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/lending_club_project)
 7. [K Means Clustering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/k_means_clustering)
    * [College Admissions](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/k_means_clustering_project)
-8. Extra Projects:
+8. [Recommender System](https://github.com/luoqiaoen/Data_Science/tree/master/sklearn/recommender)
+9. Extra Projects:
    1. [911 Call](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/911_call_project)
    2. [Stock Prices](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/finance_project)
+   
+   # More Advanced Machine Learning Stuff:
+   1. [Recommender: memory-based and model-based collaborative filtering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/recommender)

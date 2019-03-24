@@ -4,6 +4,7 @@
 3. KNN
 4. Decision Tree & Random Forest
 5. SVM
+6. K means clustering 
 
 # Mind Map
 <p align="center">

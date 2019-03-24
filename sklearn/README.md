@@ -4,7 +4,9 @@
 3. KNN
 4. Decision Tree & Random Forest
 5. SVM
-6. K means clustering 
+6. K means clustering
+7. PCA
+8. Recommender 
 
 # Mind Map
 <p align="center">

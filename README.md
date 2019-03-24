@@ -9,9 +9,10 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
 * matplotlib
 * seaborn
 * plotly
-* scikit-learn:
+* scikit-learn
 
-## SQL Exercises
+## SQL:
+* [SQL Exercise](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/SQL_exercise)
 
 ## Topics visited:
 1. [Visualization of data.](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/visualization)

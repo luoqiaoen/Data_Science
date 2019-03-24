@@ -10,12 +10,14 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
 * seaborn
 * plotly
 * scikit-learn:
-  1. linear regression
-  2. logistic regression
-  3. KNN
-  4. Decision Tree, Random Forest
-  5. SVM
 
 ## SQL Exercises
 
 ## Topics visited:
+1. Visualization of data.
+2. Linear regression.
+3. Logistic regression.
+4. K Nearest Neighbors.
+5. Support Vector Machine.
+6. Decision Trees and Random Forest
+7. K Means Clustering

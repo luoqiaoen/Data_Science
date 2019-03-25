@@ -2,10 +2,10 @@
 # Notes for Data Science
 Some notes I put together while going through data science/python/spark courses.
 I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter notebooks into READMEs.
-
+----
 ## SQL:
 * [SQL Exercise](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/SQL_exercise)
-
+----
 ## Scikit-Learn:
 1. [Visualization of data.](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/visualization)
 2. [Linear regression.](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/linear_regression)
@@ -23,7 +23,7 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
 9. Extra Projects:
    1. [911 Call](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/911_call_project)
    2. [Stock Prices](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/sklearn/finance_project)
-
+----
 ## More Advanced Machine Learning Stuff:
 1. [Recommender: memory-based and model-based collaborative filtering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/recommender)
 2. [Natural Language Processing](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/nlp)
@@ -31,3 +31,6 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
 4. [MNIST with TensorFlow using logistic regression](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/MNIST_with_tensorflow)
 5. [TensorFlow DNN Estimator](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/tensorflow_DNN_estimator)
 6. [Bank Note Authentication Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/bank_auth_dnn_project)
+-----
+## Spark, Python with Big Data
+1. [Spark DataFrame Basics](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/dataframe_basics)

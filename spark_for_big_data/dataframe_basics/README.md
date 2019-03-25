@@ -31,7 +31,7 @@ df.show()
     |  30|   Andy|
     |  19| Justin|
     +----+-------+
-    
+
 
 
 there is a null
@@ -44,7 +44,7 @@ df.printSchema()
     root
      |-- age: long (nullable = true)
      |-- name: string (nullable = true)
-    
+
 
 
 
@@ -71,7 +71,7 @@ df.describe()
 
 
 
-### We will show we can build schema if the  .read method that doesn't have inferSchema() 
+### We will show we can build schema if the  .read method that doesn't have inferSchema()
 
 
 ```python
@@ -106,7 +106,7 @@ df.printSchema()
     root
      |-- age: integer (nullable = true)
      |-- name: string (nullable = true)
-    
+
 
 
 ### Grabbing the data
@@ -171,7 +171,7 @@ df.select('age').show()
     |  30|
     |  19|
     +----+
-    
+
 
 
 
@@ -213,7 +213,7 @@ df.select(['age','name']).show()
     |  30|   Andy|
     |  19| Justin|
     +----+-------+
-    
+
 
 
 ### Creating new columns
@@ -230,7 +230,7 @@ df.withColumn('newage',df['age']).show() # copy age to newage
     |  30|   Andy|    30|
     |  19| Justin|    19|
     +----+-------+------+
-    
+
 
 
 
@@ -245,7 +245,7 @@ df.show()
     |  30|   Andy|
     |  19| Justin|
     +----+-------+
-    
+
 
 
 
@@ -260,7 +260,7 @@ df.withColumnRenamed('age','supernewage').show() # Simple Rename
     |         30|   Andy|
     |         19| Justin|
     +-----------+-------+
-    
+
 
 
 
@@ -275,7 +275,7 @@ df.withColumn('doubleage',df['age']*2).show()
     |  30|   Andy|       60|
     |  19| Justin|       38|
     +----+-------+---------+
-    
+
 
 
 
@@ -290,7 +290,7 @@ df.withColumn('add_one_age',df['age']+1).show()
     |  30|   Andy|         31|
     |  19| Justin|         20|
     +----+-------+-----------+
-    
+
 
 
 
@@ -305,7 +305,7 @@ df.withColumn('half_age',df['age']/2).show()
     |  30|   Andy|    15.0|
     |  19| Justin|     9.5|
     +----+-------+--------+
-    
+
 
 
 ### Using SQL
@@ -323,5 +323,10 @@ sql_results = spark.sql("SELECT * FROM people")
 
 
 ```python
-
+spark.sql("SELECT * FROM people WHERE age=30").show()
 ```
+    +----+-------+
+    | age|   name|
+    +----+-------+
+    |  30|   Andy|
+    +----+-------+

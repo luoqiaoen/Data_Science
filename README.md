@@ -33,4 +33,4 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
 6. [Bank Note Authentication Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/bank_auth_dnn_project)
 -----
 ## Spark, Python with Big Data
-1. [Spark DataFrame Basics](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/dataframe_basics)
+1. [Spark DataFrame](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/spark_dataframe)

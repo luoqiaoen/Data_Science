@@ -33,7 +33,7 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
 6. [Bank Note Authentication Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/advanced_ML/bank_auth_dnn_project)
 -----
 ## Spark, Python with Big Data
-1. [Spark DataFrame](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/spark_dataframe)
+1. [Spark DataFrame](https://github.com/luoqiaoen/Data_Science/tree/master/spark_for_big_data/spark_dataframe)
    * [DataFrame Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/dataframe_project)
 2. [K Means Clustering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/K_Means_Clustering)
    * [Hacker Consulting Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Clustering_Consulting_Project)

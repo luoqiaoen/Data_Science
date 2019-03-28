@@ -35,5 +35,9 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
 ## Spark, Python with Big Data
 1. [Spark DataFrame](https://github.com/luoqiaoen/Data_Science/tree/master/spark_for_big_data/spark_dataframe)
    * [DataFrame Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/dataframe_project)
-2. [K Means Clustering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/K_Means_Clustering)
+2. [Linear Regression](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Linear_Regression)
+  * [Cruise Ship Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Cruise_Ship_Project)
+3. [Logistic Regression](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Logistic_Regression)
+  * [Churn Customer Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Churn_Customer_Project)
+4. [K Means Clustering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/K_Means_Clustering)
    * [Hacker Consulting Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Clustering_Consulting_Project)

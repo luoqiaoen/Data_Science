@@ -35,7 +35,7 @@ df.printSchema()
      |-- Close: double (nullable = true)
      |-- Volume: integer (nullable = true)
      |-- Adj Close: double (nullable = true)
-    
+
 
 
 ## Print out the first 5 rows
@@ -48,20 +48,20 @@ for row in df.head(5):
 ```
 
     Row(Date=datetime.datetime(2012, 1, 3, 0, 0), Open=59.970001, High=61.060001, Low=59.869999, Close=60.330002, Volume=12668800, Adj Close=52.619234999999996)
-    
-    
+
+
     Row(Date=datetime.datetime(2012, 1, 4, 0, 0), Open=60.209998999999996, High=60.349998, Low=59.470001, Close=59.709998999999996, Volume=9593300, Adj Close=52.078475)
-    
-    
+
+
     Row(Date=datetime.datetime(2012, 1, 5, 0, 0), Open=59.349998, High=59.619999, Low=58.369999, Close=59.419998, Volume=12768200, Adj Close=51.825539)
-    
-    
+
+
     Row(Date=datetime.datetime(2012, 1, 6, 0, 0), Open=59.419998, High=59.450001, Low=58.869999, Close=59.0, Volume=8069400, Adj Close=51.45922)
-    
-    
+
+
     Row(Date=datetime.datetime(2012, 1, 9, 0, 0), Open=59.029999, High=59.549999, Low=58.919998, Close=59.18, Volume=6679300, Adj Close=51.616215000000004)
-    
-    
+
+
 
 
 
@@ -78,7 +78,7 @@ df.describe().show()
     |    min|56.389998999999996|        57.060001|        56.299999|        56.419998|          2094900|        50.363689|
     |    max|         90.800003|        90.970001|            89.25|        90.470001|         80898100|84.91421600000001|
     +-------+------------------+-----------------+-----------------+-----------------+-----------------+-----------------+
-    
+
 
 
 
@@ -94,7 +94,7 @@ df.describe().printSchema()
      |-- Close: string (nullable = true)
      |-- Volume: string (nullable = true)
      |-- Adj Close: string (nullable = true)
-    
+
 
 
 ### Convert String To Float
@@ -121,7 +121,7 @@ result.select(result['summary'],
     |    min|   56.39|   57.06|   56.30|   56.42| 2094900|
     |    max|   90.80|   90.97|   89.25|   90.47|80898100|
     +-------+--------+--------+--------+--------+--------+
-    
+
 
 
 #### Create a new dataframe with a column called HV Ratio that is the ratio of the High Price versus volume of stock traded for a day.
@@ -158,7 +158,7 @@ df2.select('HV Ratio').show()
     |6.307432259386365E-6|
     +--------------------+
     only showing top 20 rows
-    
+
 
 
 
@@ -186,7 +186,7 @@ df.select(mean('Close')).show()
     +-----------------+
     |72.38844998012726|
     +-----------------+
-    
+
 
 
 
@@ -201,7 +201,7 @@ df.select(max("Volume"),min("Volume")).show()
     +-----------+-----------+
     |   80898100|    2094900|
     +-----------+-----------+
-    
+
 
 
 
@@ -219,7 +219,7 @@ df.filter("Close < 60").count()
 
 
 ```python
-# or 
+# or
 df.filter(df['Close'] < 60).count()
 ```
 
@@ -232,7 +232,7 @@ df.filter(df['Close'] < 60).count()
 
 
 ```python
-# or 
+# or
 from pyspark.sql.functions import count
 result = df.filter(df['Close'] < 60)
 result.select(count('Close')).show()
@@ -243,7 +243,7 @@ result.select(count('Close')).show()
     +------------+
     |          81|
     +------------+
-    
+
 
 
 
@@ -271,7 +271,7 @@ df.select(corr("High","Volume")).show()
     +-------------------+
     |-0.3384326061737161|
     +-------------------+
-    
+
 
 
 
@@ -280,5 +280,5 @@ df.select(corr("High","Volume")).show()
 from pyspark.sql.functions import year
 yeardf = df.withColumn("Year", year(df["Date"]))
 max_df = yeardf.groupBy("Year").max
-max_df.select('Year','max(High)').show)
+max_df.select('Year','max(High)').show()
 ```

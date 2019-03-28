@@ -1,7 +1,7 @@
 
 # Notes for Data Science
 Some notes I put together while going through data science/python/spark courses.
-I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter notebooks into READMEs.
+I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter notebooks into READMEs for easy reference.
 ----
 ## SQL:
 * [SQL Exercise](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/SQL_exercise)

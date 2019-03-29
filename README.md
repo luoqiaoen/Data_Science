@@ -41,3 +41,6 @@ I used [nbconvert](https://github.com/jupyter/nbconvert) to make jupyter noteboo
    * [Churn Customer Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Churn_Customer_Project)
 4. [K Means Clustering](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/K_Means_Clustering)
    * [Hacker Consulting Project](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Clustering_Consulting_Project)
+5. [Natural Language Processing](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Natural_Language_Processing)
+6. [Recommender](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Recommender)
+7. [Decision_Tree_Random_Forest](https://github.com/luoqiaoen/Data_Science_Notes/tree/master/spark_for_big_data/MLlib/Decision_Tree_Random_Forest)
